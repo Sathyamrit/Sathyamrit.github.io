@@ -1,3 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Londrina Shadow", serif;
+}
+
 body h1{
     text-align: center;
+    font-size: 10em;
+}
+body h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+nav{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0px 150px 0px 150px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connect {
+    margin: 50px;
+}
+.work {
+    margin: 50px;
+}
+.social {
+    margin: 50px;
+}
+.links{
+    text-align: center;
+}
+.links a{
+    padding: 0px 10px 0px 10px;
+
 }
