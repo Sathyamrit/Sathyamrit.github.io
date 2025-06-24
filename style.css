@@ -15,36 +15,62 @@ body h2{
 }
 
 nav{
-    background-color: #333;
-    color: white;
+    background-color: #7a5050;
+    color: rgb(247, 173, 252);
     text-align: center;
     padding: 20px 50px 20px 50px;
     display: flex;
     justify-content: space-between;
 }
 nav a{
-    color: white;
+    color: rgb(241, 219, 244);
     text-decoration: none;
     font-size: 1.5em;
 }
 
-.hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {  display: grid;
+  grid-template-columns: 1fr 1.25fr 0.85fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "name name name photo"
+    "about-me about-me about-me photo"
+    "quote1 quote1 quote1 github-link"
+    "youtube youtube youtube youtube-link"
+    "linkedin linkedin linkedin linkedin-link";
 }
-.connect {
-    margin: 50px;
+
+.name { grid-area: name; }
+
+.quote1 { grid-area: quote1; }
+
+.github-link { grid-area: github-link; }
+
+.youtube { grid-area: youtube; }
+
+.youtube-link { grid-area: youtube-link; }
+
+.linkedin { grid-area: linkedin; }
+
+.linkedin-link { grid-area: linkedin-link; }
+
+.photo { grid-area: photo; }
+
+.about-me { grid-area: about-me; }
+
+
+.photo img{
+    width: 200px;
+    height: 200px;
 }
-.work {
-    margin: 50px;
-}
-.social {
-    margin: 50px;
-}
-.links{
+
+footer{
+    background-attachment: fixed;
+    background-color: #7a5050;
+    color: rgb(247, 173, 252);
     text-align: center;
-}
-.links a{
-    padding: 0px 10px 0px 10px;
+    padding: 20px;
 }

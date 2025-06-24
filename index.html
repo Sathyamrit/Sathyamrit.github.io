@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/62098bcb53.js" crossorigin="anonymous"></script>
     <title>Sathyamrit</title>
 </head>
 <body>
@@ -16,33 +13,72 @@
         <a href="#resume">Resume</a>
     </nav>
 
-    <div class="hero">
-        <h1>Sathyamrit</h1>
-        
-        <div class="connect">
-            <h2>Let's talk</h2>
-            <div class="links">
-                <a href="linkedin.com"><i class="fa-brands fa-linkedin-in fa-2x" style=" color:#0077B5"></i></a>
-                <a href="gmail.com"><i class="fa-solid fa-envelope fa-2x" style=" color:#ffce00"></i></a>
-            </div>
+    <div class="container">
+        <div class="name">
+            <h1 id="name"></h1>
+        </div>
+
+        <div class="photo">
+            <img src="images/profile.jpeg" alt="sathya" srcset="">
+        </div>
+
+        <div class="about-me">
+            <p id="about_me"></p>
+        </div>
+
+        <div class="quote1">
+            <p id="quote1"></p>
+        </div>
+
+        <div class="github-link">
+            <img src="https://placehold.co/100x100" alt="">
+        </div>
+
+        <div class="youtube">
+            <p id="youtube"></p>
         </div>
         
-        <div class="work">
-            <div class="links">
-                <h2>Check my projects on</h2>
-                <a href="github.com"><i class="fa-brands fa-github fa-3x" style=" color:#24292e"></i></a>
-            </div>
+        <div class="youtube-link">
+            <img src="https://placehold.co/100x100" alt="">
         </div>
-        
-        <div class="social">
-            <h2>Follow me on</h2>
-            <div class="links">
-                <a href="youtube.com"><i class="fa-brands fa-youtube fa-2x" style=" color:#FF0000"></i></a>
-                <a href="instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href="linkedin.com"><i class="fa-brands fa-linkedin-in fa-2x" style=" color:#0077B5"></i></a>
-            </div>
+
+        <div class="linkedin">
+            <p id="linkedin"></p>
         </div>
+
+        <div class="linkedin-link">
+            <img src="https://placehold.co/100x100" alt="">
+        </div>
+
     </div>
+    
+    <footer>
+        <p>© 2025 Sathyamrit. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const name = "Sathyamrit";
+        document.getElementById("name").textContent = name;
+
+        const about_me = "Hi, I'm " + name + " — a curious and creative Computer Science student passionate about building intelligent systems and human-centered tech.";
+        document.getElementById("about_me").textContent = about_me;
+
+        const info = "A coder by day and a sound designer by night, I experiment at the crossroads of algorithms and audio."
+        // document.getElementById("info").textContent = info;
+
+        const quote1 = "Always chasing that perfect flow."
+        document.getElementById("quote1").textContent = quote1;
+
+        const quote2 = "Where code meets creativity.";
+        // document.getElementById("quote2").textContent = quote2;
+
+        const youtube = "Check out my YouTube channel";
+        document.getElementById("youtube").textContent = youtube;
+        
+        const linkedin = "Connect with me on LinkedIn";
+        document.getElementById("linkedin").textContent = youtube;
+
+    </script>
 
 </body>
 </html>
