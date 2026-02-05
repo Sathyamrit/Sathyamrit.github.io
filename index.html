@@ -3,46 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/62098bcb53.js" crossorigin="anonymous"></script>
-    <title>Sathyamrit</title>
+    <title>C Sathyamrit | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="projects.html">Projects</a>
-        <a href="about_me.html">About Me</a>
-        <a href="#resume">Resume</a>
-    </nav>
 
-    <div class="hero">
-        <h1>Sathyamrit</h1>
-        
-        <div class="connect">
-            <h2>Let's talk</h2>
-            <div class="links">
-                <a href="linkedin.com"><i class="fa-brands fa-linkedin-in fa-2x" style=" color:#0077B5"></i></a>
-                <a href="gmail.com"><i class="fa-solid fa-envelope fa-2x" style=" color:#ffce00"></i></a>
+    <header>
+        <div class="container">
+            <h1>C. Sathyamrit</h1>
+            <div class="contact-links">
+                <a href="mailto:sathyac2004@gmail.com"><i class="fas fa-envelope"></i> sathyac2004@gmail.com</a>
+                <a href="https://linkedin.com/in/sathyamrit-c-3a32372a4/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Sathyamrit" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <span><i class="fas fa-location-dot"></i> Bangalore, India</span>
             </div>
         </div>
+    </header>
+
+    <main class="container">
         
-        <div class="work">
-            <div class="links">
-                <h2>Check my projects on</h2>
-                <a href="github.com"><i class="fa-brands fa-github fa-3x" style=" color:#24292e"></i></a>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <span class="category-label">Languages</span>
+                    <p>NodeJS, ES6 JavaScript, Python, SQL (PostgreSQL, MySQL), C, C++</p>
+                </div>
+                <div class="skill-category">
+                    <span class="category-label">Backend & AI</span>
+                    <p>Microservices, RESTful APIs, JWT/OAuth, FastAPI, Llama 3, Scikit-learn</p>
+                </div>
+                <div class="skill-category">
+                    <span class="category-label">Tools & Infrastructure</span>
+                    <p>AWS (EC2, S3), Docker, GCP, Git, Redis, Proxmox, Tailscale</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="social">
-            <h2>Follow me on</h2>
-            <div class="links">
-                <a href="youtube.com"><i class="fa-brands fa-youtube fa-2x" style=" color:#FF0000"></i></a>
-                <a href="instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href="linkedin.com"><i class="fa-brands fa-linkedin-in fa-2x" style=" color:#0077B5"></i></a>
+        </section>
+
+        <section id="projects">
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>VitaCheck: Health-Intelligence Platform</h3>
+                    <span class="date">Jan 2026</span>
+                </div>
+                <p class="tech-stack">React.js, Node.js, Python (FastAPI), Scikit-learn, Redis</p>
+                <p class="description">
+                    A hybrid microservice platform designed to identify nutritional deficiencies. It utilizes <strong>Cosine Similarity</strong> to map user symptoms to deficiency probabilities and features a recommendation engine for personalized dietary plans.
+                </p>
+                <ul>
+                    <li>Architected a dual-backend system: Node.js for orchestration and FastAPI for high-performance AI inference.</li>
+                    <li>Integrated <strong>LangChain</strong> to process unstructured natural language symptom descriptions.</li>
+                </ul>
             </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>VYAS AI: Educational LLM Platform</h3>
+                    <span class="date">Jan 2022</span>
+                </div>
+                <p class="tech-stack">Llama 3, Python, NLP, RAG</p>
+                <p class="description">
+                    A specialized RAG (Retrieval-Augmented Generation) chatbot interface built to assist students with curriculum-specific queries using <strong>Llama 3</strong>.
+                </p>
+                <ul>
+                    <li>Designed preprocessing scripts to transform unstructured academic content into searchable vector embeddings.</li>
+                    <li>Optimized intent recognition to improve response accuracy for complex student inquiries.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>University Buzz: Community Hub</h3>
+                    <span class="date">Jan 2025</span>
+                </div>
+                <p class="tech-stack">MERN Stack, Socket.io, Git</p>
+                <p class="description">
+                    A real-time community platform for student engagement, featuring event management and dynamic discussion forums.
+                </p>
+                <ul>
+                    <li>Implemented dynamic MongoDB schemas to support diverse community content and event tracking.</li>
+                    <li>Designed RESTful endpoints capable of handling 500+ concurrent users during peak university events.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>ScoreSphere: Real-time Data Pipeline</h3>
+                    <span class="date">Aug 2024</span>
+                </div>
+                <p class="tech-stack">Node.js, MongoDB, REST APIs, ETL</p>
+                <p class="description">
+                    A high-availability data pipeline that ingests and processes live sports data from multiple public APIs.
+                </p>
+                <ul>
+                    <li>Developed an <strong>ETL pipeline</strong> processing 100+ updates per minute with automated data transformation.</li>
+                    <li>Ensured system resilience using a message-driven approach to maintain high uptime.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline-item">
+                <div class="item-header">
+                    <h3>Backend Developer Intern</h3>
+                    <span class="date">July 2025 – Aug 2025</span>
+                </div>
+                <p class="company">A1 Logics | Mangalore</p>
+                <ul>
+                    <li>Developed and maintained RESTful APIs using NodeJS and Express.js for seamless data interchange.</li>
+                    <li>Implemented secure user authentication and data protection using JWT and OAuth protocols.</li>
+                    <li>Optimized MongoDB schemas, reducing query response times for high-concurrency requests.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <h3>Research IT & Systems Intern</h3>
+                    <span class="date">June 2023 – July 2023</span>
+                </div>
+                <p class="company">New Mangalore Port Authority | Panambur</p>
+                <ul>
+                    <li>Audited enterprise-grade IT infrastructure and network security protocols for 20+ servers.</li>
+                    <li>Collaborated on data migration and transformation workflows to streamline internal communication.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline-item">
+                <div class="item-header">
+                    <h3>B.Tech. in Computer Science and Engineering</h3>
+                    <span class="date">2022 – Present</span>
+                </div>
+                <p class="company">Jain University, Bangalore</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 C Sathyamrit</p>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>
