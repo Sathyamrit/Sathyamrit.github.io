@@ -29,15 +29,15 @@
             <div class="skills-grid">
                 <div class="skill-category">
                     <span class="category-label">Languages</span>
-                    <p>NodeJS, ES6 JavaScript, Python, SQL (PostgreSQL, MySQL), C, C++</p>
+                    <p>NodeJS, JavaScript, Python, SQL (PostgreSQL, MySQL), C, C++</p>
                 </div>
                 <div class="skill-category">
-                    <span class="category-label">Backend</span>
-                    <p>Microservices, RESTful APIs, JWT/OAuth, FastAPI, Llama 3, GCC</p>
+                    <span class="category-label">AI & Backend</span>
+                    <p>RAG, Microservices, RESTful APIs, JWT/OAuth, FastAPI, Ollama, Llama 3, GCC</p>
                 </div>
                 <div class="skill-category">
-                    <span class="category-label">Tools & Infrastructure</span>
-                    <p>AWS (EC2, S3), Docker, GCP, Git, Redis, Proxmox, Tailscale</p>
+                    <span class="category-label">Infrastructure & Network</span>
+                    <p>Proxmox(LXC, VM), AWS (EC2, S3), Docker, Network Protocols (TCP/IP, SSH, DNS), Git, Proxmox, Tailscale</p>
                 </div>
             </div>
         </section>
@@ -49,13 +49,14 @@
                     <h3>VitaCheck: Health-Intelligence Platform</h3>
                     <span class="date">Jan 2026</span>
                 </div>
-                <p class="tech-stack">React.js, Node.js, Python (FastAPI), Scikit-learn, Redis</p>
+                <p class="tech-stack">React.js, FastAPI, Ollama (Deepseek), LangChain (RAG), ChromaDB</p>
                 <p class="description">
-                    A hybrid microservice platform designed to identify nutritional deficiencies. It utilizes <strong>Cosine Similarity</strong> to map user symptoms to deficiency probabilities and features a recommendation engine for personalized dietary plans.
+                    A hybrid microservice platform designed to identify nutritional deficiencies. It utilizes <strong>Cosine Similarity</strong> and <strong>RAG (Retrieval-Augmented Generation)</strong> to map user symptoms to deficiency probabilities, providing personalized dietary recommendations.
                 </p>
                 <ul>
-                    <li>Architected a dual-backend system: Node.js for orchestration and FastAPI for high-performance AI inference.</li>
-                    <li>Integrated <strong>LangChain</strong> to process unstructured natural language symptom descriptions.</li>
+                    <li>Architected a dual-backend system: Node.js for orchestration and FastAPI for high-performance AI inference using <strong>Ollama</strong> for local LLM deployment.</li>
+                    <li>Implemented a <strong>RAG pipeline</strong> with LangChain to process unstructured natural language symptoms, matching them against medical datasets for high-accuracy analysis.</li>
+                    <li>Optimized system latency by integrating <strong>Redis</strong> for caching frequently accessed inference results and dietary plan templates.</li>
                 </ul>
             </div>
 
